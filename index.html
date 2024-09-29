@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Callbreak Game Score Recorder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Callbreak Score Recorder</h1>
+
+  <!-- User name input form -->
+  <div id="nameInputForm">
+    <label for="player1Name">Player 1 Name:</label>
+    <input type="text" id="player1Name" placeholder="Enter Player 1 Name" required>
+    
+    <label for="player2Name">Player 2 Name:</label>
+    <input type="text" id="player2Name" placeholder="Enter Player 2 Name" required>
+    
+    <label for="player3Name">Player 3 Name:</label>
+    <input type="text" id="player3Name" placeholder="Enter Player 3 Name" required>
+    
+    <label for="player4Name">Player 4 Name:</label>
+    <input type="text" id="player4Name" placeholder="Enter Player 4 Name" required>
+
+    <button id="startGameBtn">Start Game</button>
+  </div>
+
+  <!-- Score Table for 13 Rounds -->
+  <table id="scoreTable" style="display:none">
+    <thead>
+      <tr>
+        <th>Round</th>
+        <th id="p1Header">Player 1</th>
+        <th id="p2Header">Player 2</th>
+        <th id="p3Header">Player 3</th>
+        <th id="p4Header">Player 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Score rows for 13 rounds will be added here dynamically -->
+    </tbody>
+  </table>
+
+  <button id="finalScoresBtn" style="display:none">Calculate Final Scores</button>
+
+  <h2>Final Scores</h2>
+  <table id="finalScoresTable" style="display:none">
+    <thead>
+      <tr>
+        <th id="finalP1">Player 1</th>
+        <th id="finalP2">Player 2</th>
+        <th id="finalP3">Player 3</th>
+        <th id="finalP4">Player 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="player1Total">0</td>
+        <td id="player2Total">0</td>
+        <td id="player3Total">0</td>
+        <td id="player4Total">0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>

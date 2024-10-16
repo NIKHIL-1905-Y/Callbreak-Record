@@ -173,3 +173,38 @@ button:hover {
     width: 50px; /* Reduce the width of score inputs for small screens */
   }
 }
+
+/* Footer Styling */
+footer {
+  background-color: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+  color: whitesmoke; /* Golden text color */
+  padding: 20px 10px;
+  text-align: center;
+  margin-top: 40px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 1.4rem; /* Adjust font size for readability */
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 15px 10px;
+  }
+
+  footer p {
+    font-size: 0.9rem; /* Scale down the text size on mobile */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  footer p {
+    font-size: 0.8rem; /* Further reduce text size on very small screens */
+  }
+}
